@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.Home {
+
+    height: 100vh;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.video{
+    position: relative;
+    z-index: 1;
+}
+
+
+.Conteinerhome{
+
+    border: 2px solid red;
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    z-index: 2;
+
+}
