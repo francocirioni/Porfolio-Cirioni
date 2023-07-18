@@ -1,32 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
-
 }
 
 .Home {
 
     height: 100vh;
     display: flex;
-   align-items: center;
+    align-items: center;
     justify-content: center;
-    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    background: url("images/FondoHome.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
 
 }
 
-.video{
-    position: relative;
-    z-index: 1;
-}
+.Conteinerhome {
 
-
-.Conteinerhome{
-
-    border: 2px solid red;
-    width: 50vh;
     height: 50vh;
-    position: absolute;
-    z-index: 2;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
 
+.Buttons {
+    display: flex;
+
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.button {
+
+
+    border: 1px solid black;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 10%;
+
+}
+
+.icon {
+    width: 100%;
+}
+
+.Link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.About, .Skills, .Projects {
+    text-decoration: none;
+    color: black;
 }
