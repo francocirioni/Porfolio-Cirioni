@@ -4,7 +4,6 @@
     padding: 0;
     background: #FCFCFD
 }
-
 /* ====================NAV====================*/
 nav {
     background-color: #f1f1f1;
@@ -12,23 +11,19 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 nav .Logo {
     font-weight: bold;
     color: #333;
     font-size: 20px;
 }
-
 nav .Navigator {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 nav .Navigator .bnav {
-    display: inline-block; /* poner horizontalemente el nav */
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -89,13 +84,17 @@ nav .Navigator .bnav {
     justify-content: space-around;
 }
 
-.backend, .frontend {
+.backend, .frontend, .testing {
     border: 1px solid darkred;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+.secondtitle{
+    padding: 1rem;
 }
 .backendcontainer,.frontendconteiner{
     display: flex;
@@ -104,8 +103,7 @@ nav .Navigator .bnav {
     width: 50%;
     gap: 20px;
     border: 1px solid red;
-
-
+    padding-bottom: 2rem;
 }
 .skilldata{
     width: 80px;
@@ -118,7 +116,12 @@ nav .Navigator .bnav {
     border-radius: 3rem;
     margin-bottom: 1rem;
     border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.iconskill{width: 60px;
+height: 70px;}
 
 /* ====================QUA====================*/
 .QUALIFICATION {
@@ -154,23 +157,17 @@ nav .Navigator .bnav {
     flex-direction: column;
     align-items: center;
     border: 1px solid red;
-
 }
-
 .services {
-    width: 100%;
-    height: 100%;
+    width: 50%;
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border: 1px solid black;
+
 }
 
-.developer, .testingqa {
-    border: 1px solid darkred;
-    width: 100%;
-    text-align: center;
-}
 
 /* ====================PROJECTS====================*/
 .PROJECTS {
