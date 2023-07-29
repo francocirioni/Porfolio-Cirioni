@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="styles/Styles.css">
     <!--==============================================ICONS==============================================-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!--==============================================EFECTS==============================================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--==============================================TITLE==============================================-->
     <title>Document</title>
+
+
 </head>
 
 <body>
@@ -31,7 +35,9 @@
             <li class="bnav">Services</li>
             <li class="bnav">Projects</li>
             <li class="bnav">Contact</li>
-            <li class="bnav">Luna</li>
+            <li class="bnav">Luna
+                <button id="modoNocheBoton">Modo Noche</button>
+            </li>
             <li class="bnav">Otro</li>
         </ul>
 
@@ -43,14 +49,69 @@
 
     <section class="HOME">
 
+        <div class="conteinertitle">
+            <h1 class="PrincipalTitle">Hi, I'm Franco,</h1>
+            <h1>FullStack Developer and Tester QA</h1>
+        </div>
 
-        <h1 class="PrincipalTitle">Hi, I'm Franco,</h1>
-        <h2>FullStack Developer and Tester QA</h2>
 
         <div class="home">
-            <div class="Left"> ACA BIO</div>
-            <div class="Mid">ACA FOTO</div>
-            <div class="Right">ACA CONTACT</div>
+            <div class="Left">
+                <div class="biografy">
+                    <h3>Biografy</h3>
+                    <p>aca un poco de tu vida </p>
+                </div>
+                <div class="biocontact">
+                    <h3>Contact</h3>
+                    <p>franco.cirioni.cssm@gmail.com</p>
+                </div>
+                <div class="bioservices">
+                    <h3>Services</h3>
+                    <p>Full Stack</p>
+                    <p>Manual Testing</p>
+                    <p>Automation Testing</p>
+                    <p>General IT</p>
+                </div>
+            </div>
+            <div class="Mid">
+
+                <div class="conteinerprofile">
+
+                    <div class="pictureframe">
+
+                        <div class="picture">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="iconsprofile">
+                    <i class="ri-linkedin-box-line"></i>
+                    <i class="ri-github-line"></i>
+                    <i class="ri-discord-line"></i>
+
+                </div>
+
+
+            </div>
+            <div class="Right">
+
+                <div class="yearsit">
+                    <h3>IT years</h3>
+                    <p>6</p>
+                </div>
+                <div class="yearslearn">
+                    <h3>Years learning</h3>
+                    <p>3</p>
+                </div>
+                <div class="english">
+                    <h3>English level</h3>
+                    <p>Basic</p>
+                </div>
+
+
+            </div>
         </div>
 
 
@@ -61,7 +122,7 @@
         <h3 class="Subtitle">My favorite skills</h3>
         <div class="skills">
             <div class="backend">
-                <div class="secondtitle"> <i class="ri-database-2-line"></i> Backend</div>
+                <div class="secondtitle"><i class="ri-database-2-line"></i> Backend</div>
                 <div class="backendcontainer">
                     <div class="skilldata">
                         <div class="skillcapsule">
@@ -128,7 +189,7 @@
                 </div>
             </div>
             <div class="testing">
-                <div class="secondtitle"><i class="ri-global-line"></i> Testing </div>
+                <div class="secondtitle"><i class="ri-global-line"></i> Testing</div>
                 <div class="frontendconteiner">
                     <div class="skilldata">
                         <div class="skillcapsule">
@@ -147,8 +208,8 @@
         <h1 class="Title">QUALIFICATION</h1>
         <h3 class="Subtitle">Education & Experience</h3>
         <div class="qualification">
-            <div class="education"> <i class="ri-book-line"></i> Education</div>
-            <div class="work"><i class="ri-computer-line"></i> Work </div>
+            <div class="education"><i class="ri-book-line"></i> Education</div>
+            <div class="work"><i class="ri-computer-line"></i> Work</div>
         </div>
     </section>
     <!--====================SERVICES====================-->
@@ -175,9 +236,10 @@
         <h3 class="Subtitle">Get in touch</h3>
         <div class="Contac">
             <div class="information">
-                <h3>Email</h3>
+                <h3>Talk to me</h3>
+                <h4>Email</h4>
                 franco.cirioni.cssm@gmail.com
-                <h3>Whatsapp</h3>
+                <h4>Whatsapp</h4>
                 Write me
             </div>
             <form>
@@ -188,7 +250,7 @@
                 <input type="email" name="email" id="email" placeholder="White your email">
                 <label for="message">Your Message</label><br>
                 <input type="text" name="message" id="message" placeholder="Write your message">
-                <input type="button" value="Send Mail" id="buttonform">
+                <input type="button" value="Send Mail" id="buform">
             </form>
 
         </div>
@@ -204,16 +266,21 @@
         <li class="buttonfooter">Skills</li>
         <li class="buttonfooter">Projects</li>
     </ul>
-    <ul class="navfooter">
-        <li class="iconfooter">Icon1</li>
-        <li class="iconfooter">Icon2</li>
-        <li class="iconfooter">Icon3</li>
-    </ul>
+
+        <div class="iconsprofile">
+            <i class="ri-linkedin-box-line"></i>
+            <i class="ri-github-line"></i>
+            <i class="ri-discord-line"></i>
+
+        </div>
+
 
 
 </footer>
-
-
 </body>
 
+<!--==============================================JS==============================================-->
+<script src="JS/javascript.js"></script>
+
 </html>
+

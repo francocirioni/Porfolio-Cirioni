@@ -2,12 +2,21 @@
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background: #FCFCFD
+
+}
+body{
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+.modo-noche{
+    background: #181A1B;
+    color: #F2F2F3;
 }
 /* ====================NAV====================*/
 nav {
-    background-color: #f1f1f1;
+
     padding: 10px;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +25,18 @@ nav .Logo {
     font-weight: bold;
     color: #333;
     font-size: 20px;
+
 }
 nav .Navigator {
     list-style: none;
     margin: 0;
     padding: 0;
+
 }
 nav .Navigator .bnav {
     display: inline-block;
     margin-right: 10px;
+
 }
 
 /* ====================HOME====================*/
@@ -36,14 +48,20 @@ nav .Navigator .bnav {
     align-items: center;
     border: 1px solid red;
 }
-
+.conteinertitle{
+    height: 30%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
 .PrincipalTitle {
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: xxx-large;
 }
-
 .home {
     width: 100%;
     height: 100%;
@@ -59,8 +77,75 @@ nav .Navigator .bnav {
     text-align: center;
 }
 
+.Left{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.biografy,.biocontact,.bioservices{
+    padding-left: 20%;
+    padding-right: 20%;
+    border: 1px solid black;
+}
+
+.Right{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.yearsit, .yearslearn, .english{
+    padding-left: 20%;
+    padding-right: 20%;
+    border: 1px solid black;
+}
+
+.ri-linkedin-box-line, .ri-github-line, .ri-discord-line{
+    font-size: 35px;
+}
+
+.conteinerprofile{
+    border: 1px solid green;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pictureframe{
+    border: 2px dashed black;
+    height: 100%;
+    width: 45%;
+    border-radius: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture{
+    border: 2px solid black;
+    height: 90%;
+    width: 85%;
+    border-radius: 7rem;
+}
+
+.iconsprofile{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+
 /* ====================SKILL====================*/
 .SKILLS {
+    margin-top: 6vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -91,7 +176,6 @@ nav .Navigator .bnav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .secondtitle{
     padding: 1rem;
@@ -103,28 +187,30 @@ nav .Navigator .bnav {
     width: 50%;
     gap: 20px;
     border: 1px solid red;
-    padding-bottom: 2rem;
+    padding: 0.5rem;
 }
 .skilldata{
     width: 80px;
     height: 150px;
-    border: 1px solid red;
 }
 .skillcapsule{
     width: 80px;
     height: 100px;
     border-radius: 3rem;
     margin-bottom: 1rem;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #F2F2F3;
 }
-.iconskill{width: 60px;
-height: 70px;}
+.iconskill{
+    width: 60px;
+    height: 70px;
+    background: #F2F2F3;}
 
 /* ====================QUA====================*/
 .QUALIFICATION {
+    margin-top: 6vh;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -151,6 +237,7 @@ height: 70px;}
 
 /* ====================SERVICES====================*/
 .SERVICES {
+    margin-top: 6vh;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -171,6 +258,7 @@ height: 70px;}
 
 /* ====================PROJECTS====================*/
 .PROJECTS {
+    margin-top: 6vh;
     width: 100%;
     height: 50vh;
     display: flex;
@@ -190,20 +278,19 @@ height: 70px;}
 }
 
 /* ====================CONTACT====================*/
+
 .CONTACT {
+    margin-top: 6vh;
     width: 100%;
-    height: 50vh;
-    display: flex;
+  display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid red;
-
 }
 
 .Contac {
-    width: 100%;
+    width: 70%;
     height: 100%;
-    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -212,18 +299,33 @@ height: 70px;}
 .information, form {
     border: 1px solid darkred;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+form{
+    justify-content: space-around;
+    border: 2px solid red;
+
+
 }
 
-#email, #name, #message {
-    width: 100%;
+#email, #name, #message ,#buform{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+label{
 
 }
-
 /* ====================FOOTER====================*/
 footer {
+    margin-top: 6vh;
     width: 100%;
-    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,3 +343,4 @@ footer {
 .buttonfooter {
     display: inline-block
 }
+
